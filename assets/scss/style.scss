@@ -85,7 +85,7 @@ a {
 /*-------------------- MENU NAV --------------------*/
 
 .nav-container{
-	@include w-h(80%, 20%);
+	@include w-h(85%, 20%);
 	@include m-p(auto, auto);
 	    
 	#logo {
@@ -231,9 +231,9 @@ a {
 				color: $greenOp;
 				opacity: .5;
 				white-space: nowrap;
-				line-height: 50%;
+				line-height: 59%;
 				font: { 
-					size: 13.3em;
+					size: 13.1em;
 				}
 			}
 
@@ -278,6 +278,16 @@ a {
 		    background: $greenOp;
 		    opacity: .5;
 		}
+
+		ul {
+			padding:0;
+			li {
+				font: {
+					family: $avenir;
+				}
+			}
+			
+		}
 		
 		/*-------------------- ABOUT --------------------*/
 
@@ -304,7 +314,7 @@ a {
 			
 			#work-intro {
 				@include w-h(30%, auto);
-				h2 {margin-left: -.3em;}
+				h2 {margin-left: -30%;}
 				.line {margin-left: 2em;}
 				p {
 					@include w-h(80%, auto);
@@ -331,7 +341,7 @@ a {
 				margin-top: 5%;
 			}
 			.project {
-				@include w-h(33em, 22em);
+				@include w-h(100%, auto);
 				max-width: 33em;
 				position: relative;
 				background: $rockWhite;
@@ -386,7 +396,7 @@ a {
 			flex-wrap: wrap;
 			align-items: flex-end;
 			margin-bottom: 10%;
-			margin-right: 2%;
+			margin-right: 8%;
 			.line {margin-right: 40%;}
 			p {
 				@include w-h(35%, auto);
@@ -497,6 +507,10 @@ footer {
 		font-size: .6em;
 	}	
 
+	p* {
+		font-size: 2em;
+	}
+
 	#header-line-right {
 		display: none;
 	}
@@ -512,20 +526,36 @@ footer {
 	#contact-line {
 		display: none;
 	}
-
+	
+	
 	header {
 		max-width: 90%;
 		h1 {
-			font-size: 11em;
+			font: {
+				size: 8em;
+			}
 		}
 		.webdev {
 			margin-left: 3%;
-			font-size: 11.5em;
+			font: {
+				size: 10.5em;
 			}
+		}
+	}
+
+	h2 {font-size: 7em;}
+
+	#baout {
+		.line {margin-left: 6.5em;}
+	}
+
+	#work {
+		.line {margin-left: 3em;}
+		h2 {margin-left: -50%;}
 	}
 
 	#contact {
-		h2 {margin-right: 4%;}
+		//h2 {margin-right: 4%;}
 		p {margin-right: 7%;}
 	}
 	
@@ -555,17 +585,17 @@ footer {
 
 	header {
 		max-width: 90%;
-			h1 {
-				font-size: 11em;
-			}
-			.webdev {
-				margin-left: 2%;
-				font-size: 12em;
-			}
+		h1 {
+			font-size: 11em;
 		}
+		.webdev {
+			margin-left: 2%;
+			font-size: 12em;
+		}
+	}
 
 	#contact {
-		h2 {margin-right: 4%;}
+		//h2 {margin-right: 4%;}
 		p {margin-right: 7%;}
 	}
 } 
@@ -595,12 +625,13 @@ footer {
 	header {
 		max-width: 90%;
 		.webdev {
+			font-size: 12.7em;
 			margin-left: 2%;
 		}
 	}
 
 	#contact {
-		h2 {margin-right: 4%;}
+		//h2 {margin-right: 4%;}
 		p {margin-right: 7%;}
 	}
 } 
