@@ -1,0 +1,456 @@
+/*-------------------- MIXINS --------------------*/
+/*-------------------- COlORS VARIABLES --------------------*/
+/*-------------------- FONTS --------------------*/
+@font-face {
+  font-family: Lovelo-bold;
+  src: url(../css/fonts/Lovelo/Lovelo_Line_Bold.otf); }
+@font-face {
+  font-family: Lovelo-light;
+  src: url(../css/fonts/Lovelo/Lovelo_Line_Light.otf); }
+@font-face {
+  font-family: Bangla;
+  src: url(../css/fonts/Bangla/Bangla_MN.ttf); }
+@font-face {
+  font-family: Avenir;
+  src: url(../css/fonts/Avenir_Next/AvenirNext_Regular.otf), url(../css/fonts/Avenir_Next/AvenirNext_Bold.otf); }
+/*-------------------- GLOBAL RULES --------------------*/
+html, body {
+  width: 99vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white; }
+
+body {
+  overflow-x: hidden; }
+
+li {
+  list-style-type: none; }
+
+p {
+  font-family: "Avenir";
+  font-size: 1.2em; }
+  p a:hover {
+    text-decoration: line-through; }
+
+a {
+  text-decoration: none;
+  color: #DB5E55;
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.2em; }
+  a:hover {
+    color: #456657;
+    opacity: .5; }
+
+/*-------------------- MENU NAV --------------------*/
+.nav-container {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  padding: auto; }
+  .nav-container #logo {
+    height: 1em;
+    margin: auto;
+    position: fixed;
+    color: #DB5E55;
+    text-shadow: 2px 6px 17px rgba(0, 0, 0, 0.5); }
+    .nav-container #logo a {
+      border-bottom: 3px solid #DB5E55;
+      text-decoration: none;
+      font-family: "Lovelo-bold";
+      font-size: 3.8em; }
+      .nav-container #logo a:hover {
+        color: #456657;
+        opacity: .5; }
+  .nav-container .navbar {
+    display: flex;
+    justify-content: flex-end; }
+    .nav-container .navbar .nav-item {
+      padding: 1em;
+      padding-bottom: 0; }
+      .nav-container .navbar .nav-item a {
+        text-decoration: none;
+        font-family: "Avenir";
+        font-size: 1.3em;
+        font-weight: 300; }
+        .nav-container .navbar .nav-item a:hover {
+          text-decoration: line-through;
+          color: #456657;
+          opacity: .5; }
+
+/*-------------------- PRINCIPAL CONTAINER --------------------*/
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  /*-------------------- LINES --------------------*/
+  /*-------------------- HEADER --------------------*/
+  /*-------------------- MAIN --------------------*/ }
+  .container #header-line-right {
+    width: 100%;
+    height: 100%;
+    stroke: #DB5E55;
+    stroke-width: 2.5;
+    z-index: 3;
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 5%; }
+  .container #about-line {
+    width: 35%;
+    height: 100%;
+    stroke: #DB5E55;
+    stroke-width: 2.5;
+    z-index: 2;
+    position: absolute;
+    margin-top: -14%; }
+  .container #work-line {
+    width: 75%;
+    height: 80%;
+    stroke: #DB5E55;
+    stroke-width: 2.5;
+    z-index: 1;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 15%; }
+  .container #contact-line {
+    width: 65%;
+    height: auto;
+    stroke: #DB5E55;
+    stroke-width: 2.5;
+    z-index: 2;
+    position: absolute;
+    margin-left: -60%;
+    margin-top: 16%; }
+  .container header {
+    box-shadow: 2px 2px 300px 200px rgba(56, 56, 56, 0.1);
+    position: relative; }
+    .container header .blur-name {
+      filter: blur(100px);
+      position: absolute;
+      background-color: #383838;
+      background-attachment: fixed;
+      opacity: 0.1;
+      height: 100%;
+      top: 0px;
+      left: 0em;
+      right: 0px;
+      bottom: 0px;
+      z-index: -100; }
+    .container header .name {
+      width: 100%;
+      height: 50%;
+      margin: auto;
+      padding: auto;
+      margin-top: 13%;
+      text-align: center;
+      z-index: 4;
+      box-shadow: inset 2px 2px 300px 200px rgba(56, 56, 56, 0.1);
+      position: relative; }
+      .container header .name h1 {
+        margin: 0;
+        margin-left: -1.5%;
+        text-transform: uppercase;
+        color: #383838;
+        letter-spacing: -8px;
+        line-height: 90%;
+        text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);
+        font-family: "Lovelo-light";
+        font-size: 12em;
+        font-weight: normal; }
+      .container header .name .andrea {
+        margin-right: 4%; }
+      .container header .name .webdev {
+        margin-left: -2%;
+        position: absolute;
+        z-index: 2;
+        color: #456657;
+        opacity: .5;
+        white-space: nowrap;
+        line-height: 50%;
+        font-size: 13.3em; }
+  .container main {
+    height: 100%;
+    margin-top: 18em;
+    /*-------------------- ABOUT --------------------*/
+    /*-------------------- WORK --------------------*/
+    /*-------------------- CONTACT --------------------*/ }
+    .container main h2 {
+      margin-bottom: -.2em;
+      margin-top: 0;
+      padding-top: .2em;
+      position: relative;
+      z-index: 2;
+      color: #383838;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Bangla";
+      font-size: 13em;
+      font-weight: normal; }
+    .container main h3 {
+      color: #383838;
+      font-family: "Avenir";
+      font-size: 1.5em;
+      font-weight: bold; }
+    .container main .line {
+      position: relative;
+      content: "";
+      height: 2px;
+      width: 1.7em;
+      margin-bottom: 2em;
+      display: block;
+      background: #456657;
+      opacity: .5; }
+    .container main #about {
+      width: auto;
+      height: auto;
+      margin-top: 15%; }
+      .container main #about .line {
+        margin-left: 5em; }
+      .container main #about p {
+        width: 40%;
+        height: auto;
+        margin-left: 4em; }
+    .container main #work {
+      width: auto;
+      height: auto;
+      margin-top: -15%;
+      margin-right: 4%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end; }
+      .container main #work #work-intro {
+        width: 30%;
+        height: auto; }
+        .container main #work #work-intro h2 {
+          margin-left: -.3em; }
+        .container main #work #work-intro .line {
+          margin-left: 2em; }
+        .container main #work #work-intro p {
+          width: 80%;
+          height: auto;
+          margin-left: 2em; }
+      .container main #work .img-project {
+        width: 100%;
+        height: auto; }
+        .container main #work .img-project img {
+          width: 50%;
+          max-width: 45em;
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5); }
+          .container main #work .img-project img:hover {
+            border: 5px solid #456657; }
+      .container main #work #interview-img {
+        margin-right: -18%;
+        z-index: 2; }
+      .container main #work #restaurant-img {
+        margin-right: -18%;
+        margin-top: 5%; }
+      .container main #work .project {
+        width: 33em;
+        height: 22em;
+        max-width: 33em;
+        position: relative;
+        background: #F0F0DD;
+        box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.2); }
+      .container main #work .blur-project {
+        background: white;
+        position: absolute;
+        filter: blur(17px);
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        right: 20%;
+        bottom: 20%; }
+      .container main #work .text-project {
+        position: relative;
+        padding: 4em 1em 3em 5em; }
+        .container main #work .text-project a {
+          margin-left: 65%;
+          text-decoration: none;
+          font-size: 1.2em;
+          font-weight: 200; }
+          .container main #work .text-project a:hover {
+            text-decoration: line-through;
+            color: #456657; }
+      .container main #work #interview {
+        margin-top: -14%;
+        margin-right: 9%;
+        z-index: 5; }
+      .container main #work #restaurant {
+        margin-top: -14%;
+        margin-right: 9%;
+        margin-bottom: 7%;
+        z-index: 4; }
+    .container main #contact {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      margin-bottom: 10%;
+      margin-right: 2%; }
+      .container main #contact .line {
+        margin-right: 40%; }
+      .container main #contact p {
+        width: 35%;
+        height: auto;
+        margin-right: 7%; }
+        .container main #contact p a {
+          font-family: "Avenir";
+          font-weight: bold;
+          font-size: 1em; }
+
+/*-------------------- FOOTER --------------------*/
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 5%;
+  /*-------------------- SOCIALS --------------------*/ }
+  footer .blur-footer {
+    background: #1D1D16;
+    position: absolute;
+    filter: blur(50px);
+    height: 30em;
+    top: 0px;
+    left: -6.25em;
+    right: -200px;
+    bottom: 0px; }
+  footer .footer-text {
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin-left: 10em; }
+    footer .footer-text h2 {
+      padding-top: .5em;
+      margin-bottom: .2em;
+      color: #F0F0DD;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Abril Fatface", cursive;
+      font-size: 5em;
+      font-weight: 400; }
+    footer .footer-text .line-folks {
+      position: relative;
+      content: "";
+      height: 1px;
+      width: 1.4em;
+      margin-left: 1.4em;
+      margin-bottom: 1em;
+      display: block;
+      background: #DB5E55; }
+    footer .footer-text p {
+      width: 60%;
+      height: auto;
+      margin-left: 3%;
+      color: #F0F0DD;
+      padding-bottom: .8em; }
+    footer .footer-text a {
+      margin-left: 3%; }
+  footer .social-links {
+    width: 40%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-top: 1em; }
+    footer .social-links ul {
+      margin-bottom: 0; }
+      footer .social-links ul li {
+        display: inline-flex; }
+        footer .social-links ul li a {
+          padding: 1em;
+          padding-bottom: 0;
+          padding-left: 0;
+          text-decoration: none;
+          font-size: 1em; }
+          footer .social-links ul li a:hover {
+            text-decoration: line-through;
+            color: #456657; }
+
+/*-------------------- MEDIA QUERIES --------------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html, body {
+    font-size: .6em; }
+
+  #header-line-right {
+    display: none; }
+
+  #about-line {
+    display: none; }
+
+  #work-line {
+    display: none; }
+
+  #contact-line {
+    display: none; }
+
+  header {
+    max-width: 90%; }
+    header h1 {
+      font-size: 11em; }
+    header .webdev {
+      margin-left: 3%;
+      font-size: 11.5em; }
+
+  #contact h2 {
+    margin-right: 4%; }
+  #contact p {
+    margin-right: 7%; } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  html, body {
+    font-size: .715em; }
+
+  #header-line-right {
+    display: none; }
+
+  #about-line {
+    display: none; }
+
+  #work-line {
+    display: none; }
+
+  #contact-line {
+    display: none; }
+
+  header {
+    max-width: 90%; }
+    header h1 {
+      font-size: 11em; }
+    header .webdev {
+      margin-left: 2%;
+      font-size: 12em; }
+
+  #contact h2 {
+    margin-right: 4%; }
+  #contact p {
+    margin-right: 7%; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  html, body {
+    font-size: .8em; }
+
+  #header-line-right {
+    display: none; }
+
+  #about-line {
+    display: none; }
+
+  #work-line {
+    display: none; }
+
+  #contact-line {
+    display: none; }
+
+  header {
+    max-width: 90%; }
+    header .webdev {
+      margin-left: 2%; }
+
+  #contact h2 {
+    margin-right: 4%; }
+  #contact p {
+    margin-right: 7%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,606 @@
+/*-------------------- MIXINS --------------------*/
+
+@mixin w-h($w, $h) {
+	width: $w;
+	height: $h;
+}
+@mixin m-p($m, $p) {
+	margin: $m;
+	padding: $p;
+}
+/*-------------------- COlORS VARIABLES --------------------*/
+
+$black: #000;
+$darkGrey: #383838;
+$greenOp: #456657;
+$roman: #DB5E55;
+$rockWhite: #F0F0DD	;
+
+/*-------------------- FONTS --------------------*/
+
+$loveloBold: 'Lovelo-bold';
+$loveloLight: 'Lovelo-light';
+$abril: 'Abril Fatface', cursive;
+$bangla: 'Bangla';
+$avenir: 'Avenir';
+
+@font-face {
+	font-family: Lovelo-bold;
+	src: url(../css/fonts/Lovelo/Lovelo_Line_Bold.otf);
+}
+@font-face {
+	font-family: Lovelo-light;
+	src: url(../css/fonts/Lovelo/Lovelo_Line_Light.otf);
+}
+@font-face {
+	font-family: Bangla;
+	src: url(../css/fonts/Bangla/Bangla_MN.ttf);
+}
+@font-face {
+	font-family: Avenir;
+	src: url(../css/fonts/Avenir_Next/AvenirNext_Regular.otf), url(../css/fonts/Avenir_Next/AvenirNext_Bold.otf);
+}
+
+/*-------------------- GLOBAL RULES --------------------*/
+
+html, body {
+  width: 99vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+body {overflow-x:hidden;}
+
+li {
+	list-style-type: none;
+}
+
+p {
+	font: {
+		family: $avenir;
+		size: 1.2em;
+	}
+					
+	a {
+		&:hover {
+			text-decoration: line-through;
+		}
+	}
+}
+
+a { 
+	text-decoration: none;
+	color: $roman;
+	font: {
+		family: $abril;
+		size: 1.2em;
+	}
+	&:hover {
+		color: $greenOp; 
+		opacity: .5;
+	}
+}
+
+/*-------------------- MENU NAV --------------------*/
+
+.nav-container{
+	@include w-h(80%, 20%);
+	@include m-p(auto, auto);
+	    
+	#logo {
+		height: 1em;
+
+		a {
+			border-bottom: 3px solid $roman;
+			text-decoration: none;
+			font: {
+				family: $loveloBold;
+				size: 3.8em;
+			}
+			&:hover {
+				color: $greenOp; 
+				opacity: .5;
+			}
+		}
+		
+		margin: auto;
+		position: fixed;
+		color: $roman;
+		text-shadow: 2px 6px 17px rgba($black, .5);
+	}
+
+	.navbar {			
+		display: flex;
+		justify-content: flex-end;																																																																							
+		.nav-item {
+			padding: 1em;
+			padding-bottom:0;
+			a {
+				text-decoration: none;		
+				font: {
+						family: $avenir;
+						size: 1.3em;
+						weight: 300;
+					}			
+				&:hover {
+					text-decoration: line-through;
+					color: $greenOp;
+					opacity: .5;
+				}						
+			}
+		}
+	}
+}
+
+/*-------------------- PRINCIPAL CONTAINER --------------------*/
+
+.container {
+	@include w-h(100%, 100%);
+	@include m-p(auto, auto);
+
+	/*-------------------- LINES --------------------*/
+
+	#header-line-right {
+		@include w-h(100%, 100%);
+		stroke: $roman;
+		stroke-width: 2.5;
+		z-index: 3;
+		position: absolute;
+		margin-top: -2%;
+		margin-left: 5%;
+	}
+	
+	#about-line {
+		@include w-h(35%, 100%);
+		stroke: $roman;
+		stroke-width: 2.5;
+		z-index: 2;
+		position: absolute;
+		margin-top: -14%;
+	}
+
+	#work-line {
+		@include w-h(75%, 80%);
+		stroke: $roman;
+		stroke-width: 2.5;
+		z-index: 1;
+		position: absolute;
+		margin-left: 15%;
+		margin-top: 15%;
+	}
+
+	#contact-line {
+		@include w-h(65%, auto);
+		stroke: $roman;
+		stroke-width: 2.5;
+		z-index: 2;
+		position: absolute;
+		margin-left: -60%;
+		margin-top: 16%;
+	}
+	
+	/*-------------------- HEADER --------------------*/
+
+	header {
+		box-shadow: 2px 2px 300px 200px  rgba($darkGrey, .1);
+		position:relative;
+		.blur-name {
+			filter: blur(100px);
+			position: absolute;
+			background-color: $darkGrey;
+			background-attachment: fixed;
+			opacity: 0.1;
+			height: 100%;
+			top: 0px;
+			left: 0em;
+			right: 0px;
+			bottom: 0px;
+			z-index: -100;
+		}
+		.name {
+			@include w-h(100%, 50%);
+			@include m-p(auto, auto);
+			margin-top: 13%;
+			text-align: center;
+			z-index: 4;
+			box-shadow: inset 2px 2px 300px 200px rgba($darkGrey, .1);
+			position: relative;
+		
+			h1 {
+				margin: 0;
+				margin-left: -1.5%;
+				text-transform: uppercase;
+				color: $darkGrey;
+				letter-spacing: -8px;
+				line-height: 90%;
+				text-shadow: 4px 6px 10px rgba($black, .5);
+				font: {
+					family: $loveloLight;
+					size: 12em;
+					weight: normal;
+				}
+			}
+			.andrea {
+				margin-right: 4%;
+			}
+			.webdev {
+				margin-left: -2%;
+				position: absolute;
+				z-index: 2;
+				color: $greenOp;
+				opacity: .5;
+				white-space: nowrap;
+				line-height: 50%;
+				font: { 
+					size: 13.3em;
+				}
+			}
+
+		}
+	}
+
+	/*-------------------- MAIN --------------------*/
+
+	main {
+		height: 100%;
+		margin-top: 18em;
+		
+		h2 {
+			margin-bottom: -.2em;
+			margin-top: 0;
+			padding-top: .2em;
+			position: relative;	
+			z-index: 2;
+			color: $darkGrey;
+			text-shadow: 0px 4px 4px rgba($black, .5);
+			font: {
+				family: $bangla;
+				size: 13em;
+				weight: normal;
+			}
+		}
+		h3 {
+			color: $darkGrey;
+			font: {
+				family: $avenir;
+				size: 1.5em;
+				weight: bold;
+			}
+		}
+		.line {
+			position: relative;
+			content: "";
+			height: 2px;
+		    width: 1.7em;
+		    margin-bottom: 2em;
+		    display: block;
+		    background: $greenOp;
+		    opacity: .5;
+		}
+		
+		/*-------------------- ABOUT --------------------*/
+
+		#about {
+			@include w-h(auto, auto);
+			margin-top: 15%;
+			.line {margin-left: 5em;}
+			p {
+				@include w-h(40%, auto);
+				margin-left: 4em;
+			}
+		}
+
+		/*-------------------- WORK --------------------*/
+
+		#work {
+			@include w-h(auto, auto);
+			margin-top: -15%;
+			margin-right: 4%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			
+			#work-intro {
+				@include w-h(30%, auto);
+				h2 {margin-left: -.3em;}
+				.line {margin-left: 2em;}
+				p {
+					@include w-h(80%, auto);
+					margin-left: 2em;
+				}
+			}
+			.img-project {
+				@include w-h(100%, auto);
+				img {
+					width: 50%;
+					max-width: 45em;
+					box-shadow: 0px 4px 15px 0px rgba($black, .5);
+					&:hover {
+						border: 5px solid $greenOp; 
+					}
+				}
+			}
+			#interview-img {
+				margin-right: -18%;
+				z-index: 2;
+			}
+			#restaurant-img {
+				margin-right: -18%;
+				margin-top: 5%;
+			}
+			.project {
+				@include w-h(33em, 22em);
+				max-width: 33em;
+				position: relative;
+				background: $rockWhite;
+				box-shadow: 6px 6px 25px 0px rgba($black, .2);
+			}
+			.blur-project{
+				background: white;
+				position: absolute;
+				filter: blur(17px);
+				height: 100%;
+				width: 100%;
+				top: 0%;
+				left: 0%;
+				right: 20%;
+				bottom: 20%;
+			}
+			.text-project {
+				position: relative;	
+				padding: 4em 1em 3em 5em;
+
+				a{
+					margin-left: 65%;
+					text-decoration: none;
+					font: {
+						size: 1.2em;
+						weight: 200;
+					}
+					&:hover {
+						text-decoration: line-through;
+						color: $greenOp;
+					}
+				}
+			}
+			#interview {
+				margin-top: -14%;
+				margin-right: 9%;
+				z-index: 5;
+			}
+			#restaurant {
+				margin-top: -14%;
+				margin-right: 9%;
+				margin-bottom: 7%;
+				z-index: 4;
+			}
+		}
+		
+		/*-------------------- CONTACT --------------------*/
+
+		#contact {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			margin-bottom: 10%;
+			margin-right: 2%;
+			.line {margin-right: 40%;}
+			p {
+				@include w-h(35%, auto);
+				margin-right: 7%;
+				a {
+					font: {
+						family: $avenir;
+						weight: bold;
+						size: 1em;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+/*-------------------- FOOTER --------------------*/
+
+footer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-bottom: 5%;
+	.blur-footer {
+		background: #1D1D16;
+		position: absolute;
+		filter: blur(50px);
+		height: 30em;
+		top: 0px;
+		left: -6.25em;
+		right: -200px;
+		bottom: 0px;
+	}
+
+	.footer-text {
+		@include w-h(60%, auto);
+		position: relative;
+		margin-left: 10em;
+		
+		h2 {
+			padding-top: .5em;
+			margin-bottom: .2em;
+			color: $rockWhite;
+			text-shadow: 0px 4px 4px rgba($black, .5);
+			font: {
+				family: $abril;
+				size: 5em;
+				weight: 400;
+			}
+		}
+		.line-folks {
+			position: relative;
+			content: "";
+			height: 1px;
+		    width: 1.4em;
+		    margin-left: 1.4em;
+		    margin-bottom: 1em;
+		    display: block;
+		    background: $roman;
+		}
+		p {
+			@include w-h(60%, auto);
+			margin-left: 3%;
+			color: $rockWhite;
+			padding-bottom: .8em;
+		}
+		a {margin-left: 3%;}
+	}
+
+	/*-------------------- SOCIALS --------------------*/
+
+	.social-links {
+		@include w-h(40%, auto);
+		position: relative;
+		text-align: center;
+		padding-top: 1em;
+		ul {
+			margin-bottom: 0;
+			li {
+				display: inline-flex;
+				a  {
+					padding: 1em;
+					padding-bottom: 0;
+					padding-left: 0;
+					text-decoration: none;
+					font: {
+						size: 1em;
+					}
+					&:hover {
+						text-decoration: line-through;
+						color: $greenOp;
+					}
+				}
+			}
+		}	
+	}
+}
+
+
+/*-------------------- MEDIA QUERIES --------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	html, body {
+		font-size: .6em;
+	}	
+
+	#header-line-right {
+		display: none;
+	}
+
+	#about-line {
+		display: none;
+	}
+
+	#work-line {
+		display: none;
+	}
+
+	#contact-line {
+		display: none;
+	}
+
+	header {
+		max-width: 90%;
+		h1 {
+			font-size: 11em;
+		}
+		.webdev {
+			margin-left: 3%;
+			font-size: 11.5em;
+			}
+	}
+
+	#contact {
+		h2 {margin-right: 4%;}
+		p {margin-right: 7%;}
+	}
+	
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	html, body {
+		font-size: .715em;
+	}	
+
+	#header-line-right {
+		display: none;
+	}
+
+	#about-line {
+		display: none;
+	}
+
+	#work-line {
+		display: none;
+	}
+
+	#contact-line {
+		display: none;
+	}
+
+	header {
+		max-width: 90%;
+			h1 {
+				font-size: 11em;
+			}
+			.webdev {
+				margin-left: 2%;
+				font-size: 12em;
+			}
+		}
+
+	#contact {
+		h2 {margin-right: 4%;}
+		p {margin-right: 7%;}
+	}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	html, body {
+		font-size: .8em;
+	}	
+
+	#header-line-right {
+		display: none;
+	}
+
+	#about-line {
+		display: none;
+	}
+
+	#work-line {
+		display: none;
+	}
+
+	#contact-line {
+		display: none;
+	}
+
+	header {
+		max-width: 90%;
+		.webdev {
+			margin-left: 2%;
+		}
+	}
+
+	#contact {
+		h2 {margin-right: 4%;}
+		p {margin-right: 7%;}
+	}
+} 
