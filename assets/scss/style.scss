@@ -50,7 +50,10 @@ html, body {
   padding: 0;
   background-color: white;
 }
-body {overflow-x:hidden;}
+body {
+	overflow-x:hidden;
+	overflow-y: scroll;
+}
 
 li {
 	list-style-type: none;
@@ -200,7 +203,6 @@ a {
 		}
 		.name {
 			@include w-h(100%, 50%);
-			@include m-p(auto, auto);
 			margin-top: 13%;
 			text-align: center;
 			z-index: 4;
@@ -294,6 +296,7 @@ a {
 		#about {
 			@include w-h(auto, auto);
 			margin-top: 15%;
+			h2 {@include w-h(50%, auto);}
 			.line {margin-left: 5em;}
 			p {
 				@include w-h(40%, auto);
@@ -314,7 +317,7 @@ a {
 			
 			#work-intro {
 				@include w-h(30%, auto);
-				h2 {margin-left: -30%;}
+				h2 {margin-left: -45%;}
 				.line {margin-left: 2em;}
 				p {
 					@include w-h(80%, auto);
@@ -376,11 +379,13 @@ a {
 				}
 			}
 			#interview {
+				@include w-h(50%, auto);
 				margin-top: -14%;
 				margin-right: 9%;
 				z-index: 5;
 			}
 			#restaurant {
+				@include w-h(50%, auto);
 				margin-top: -14%;
 				margin-right: 9%;
 				margin-bottom: 7%;
@@ -397,6 +402,7 @@ a {
 			align-items: flex-end;
 			margin-bottom: 10%;
 			margin-right: 8%;
+			h2 {@include w-h(60%, auto);}
 			.line {margin-right: 40%;}
 			p {
 				@include w-h(35%, auto);
@@ -439,6 +445,8 @@ footer {
 		margin-left: 10em;
 		
 		h2 {
+			@include w-h(100%, auto);
+
 			padding-top: .5em;
 			margin-bottom: .2em;
 			color: $rockWhite;
@@ -497,18 +505,270 @@ footer {
 	}
 }
 
-
 /*-------------------- MEDIA QUERIES --------------------*/
+@media only screen and (max-width: 1500px){
+	.container {
+		header {
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					
+					font-size: 12.9em;				
+				}
+			}	
+		}
+	}
+} 
+@media only screen and (max-width: 1450px){
+	.container {
+		header {
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 12.5em;				
+				}
+			}	
+		}
+	}
+} 
+@media only screen and (max-width: 1400px){
+	.container {
+		header {
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 12.1em;				
+				}
+			}	
+		}
+	}
+} 
+@media only screen and (max-width: 1350px){
+	.container {
+		header {
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 11.7em;				
+				}
+			}	
+		}
+	}
+} 
+@media only screen and (max-width: 1300px){
+	.container {
+		header {
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 11.3em;				
+				}
+			}	
+		}
+	}
+}
+@media only screen and (max-width: 1250px){
+	html, body {
+		font-size: .975em;
+	}
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 11.3em;				
+				}
+			}	
+		}
+	}
+}
+@media only screen and (max-width: 1200px){
+	html, body {
+		font-size: .975em;
+	}	
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 11em;				
+				}
+			}	
+		}
+	}
+}
+@media only screen and (max-width: 1150px){
+	html, body {
+		font-size: .95em;
+	}	
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 11em;				
+				}
+			}	
+		}
+	}
+}
+@media only screen and (max-width: 1100px){
+	html, body {
+		font-size: .95em;
+	}
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 10.5em;				
+				}
+			}	
+		}
+	}
+}
+@media only screen and (max-width: 1050px){
+	html, body {
+		font-size: .9em
+	}
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 11.5em;				
+				}
+			}	
+		}
+	}	
+}
 
-/* Extra small devices (phones, 600px and down) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1000px){
+	html, body {
+		font-size: .8em;
+	}	
+	body {
+		overflow-x: hidden;
+	}
+
+	#header-line-right {
+		display: none;
+	}
+
+	#about-line {
+		display: none;
+	}
+
+	#work-line {
+		display: none;
+	}
+
+	#contact-line {
+		display: none;
+	}
+
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 13.8em;				
+				}
+			}	
+		}
+		main {
+			#contact {
+				p {margin-right: 7%;}
+			}
+		}
+	}
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+	html, body {
+		font-size: .7em;
+	}
+	body {
+		overflow-x: hidden;
+	}	
+
+	#header-line-right {
+		display: none;
+	}
+
+	#about-line {
+		display: none;
+	}
+
+	#work-line {
+		display: none;
+	}
+
+	#contact-line {
+		display: none;
+	}
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 14.1em;
+				}
+			}	
+		}
+		main {
+			#contact {
+				p {margin-right: 7%;}
+			}
+		}	
+	}
+} 
+
+
+/* Extra small devices */
 @media only screen and (max-width: 600px) {
 	
 	html, body {
 		font-size: .6em;
 	}	
-
-	p* {
-		font-size: 2em;
+	body {
+		overflow-x: hidden;
+	}
+	p {
+		font-size: 1.5em;
 	}
 
 	#header-line-right {
@@ -527,111 +787,97 @@ footer {
 		display: none;
 	}
 	
-	
-	header {
-		max-width: 90%;
-		h1 {
-			font: {
-				size: 8em;
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font: {
+						size: 15em;
+					}
+				}
+				.webdev {
+					font: {
+						size: 15.5em;
+					}
+				}
 			}
 		}
-		.webdev {
-			margin-left: 3%;
-			font: {
-				size: 10.5em;
+		h2 {font-size: 7em;}
+
+		main {
+			#baout {
+				.line {margin-left: 6.5em;}
+				p {
+					margin-left: 3.5em;
+				}
+			}
+
+			#work {
+				.line {margin-left: 3em;}
+				h2 {margin-left: -50%;}
+				#work-intro {
+					p {margin-left: 1.6em;}
+				}
+				.project {
+					.text-project {
+						h3 {
+							font-size: 2em;
+						}
+					}
+				}
+			}
+
+			#contact {
+				h2{margin-right: 14%;}
+				p {margin-right: 7%;}
+			}
+		}
+		
+		footer {
+			.footer-text{
+				h2 { font-size: 4.3em;}
 			}
 		}
 	}
-
-	h2 {font-size: 7em;}
-
-	#baout {
-		.line {margin-left: 6.5em;}
-	}
-
-	#work {
-		.line {margin-left: 3em;}
-		h2 {margin-left: -50%;}
-	}
-
-	#contact {
-		//h2 {margin-right: 4%;}
-		p {margin-right: 7%;}
-	}
-	
 } 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-	html, body {
-		font-size: .715em;
-	}	
-
-	#header-line-right {
-		display: none;
-	}
-
-	#about-line {
-		display: none;
-	}
-
-	#work-line {
-		display: none;
-	}
-
-	#contact-line {
-		display: none;
-	}
-
-	header {
-		max-width: 90%;
-		h1 {
-			font-size: 11em;
-		}
-		.webdev {
-			margin-left: 2%;
-			font-size: 12em;
+@media only screen and (max-width: 425px) {
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				h1 {
+					font-size: 11em;
+				}
+				.webdev {
+					font-size: 12em;
+				}
+			}	
 		}
 	}
-
-	#contact {
-		//h2 {margin-right: 4%;}
-		p {margin-right: 7%;}
-	}
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px){
-	html, body {
-		font-size: .8em;
-	}	
-
-	#header-line-right {
-		display: none;
-	}
-
-	#about-line {
-		display: none;
-	}
-
-	#work-line {
-		display: none;
-	}
-
-	#contact-line {
-		display: none;
-	}
-
-	header {
-		max-width: 90%;
-		.webdev {
-			font-size: 12.7em;
-			margin-left: 2%;
+}
+@media only screen and (max-width: 375px) {
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				.webdev {
+					font-size: 12em;
+				}
+			}	
 		}
 	}
-
-	#contact {
-		//h2 {margin-right: 4%;}
-		p {margin-right: 7%;}
+}
+@media only screen and (max-width: 320px) {
+	.container {
+		header {
+			max-width: 90%;
+			.name {
+				.webdev {
+					font-size: 10.3em;
+				}
+			}	
+		}
 	}
-} 
+}
