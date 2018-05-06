@@ -335,61 +335,25 @@ a {
 					}
 				}
 			}
-			#interview-img {
+			#interview {
 				margin-right: -18%;
 				z-index: 2;
 			}
-			#restaurant-img {
-				margin-right: -18%;
-				margin-top: 5%;
-			}
-			.project {
-				@include w-h(100%, auto);
-				max-width: 33em;
-				position: relative;
-				background: $rockWhite;
-				box-shadow: 6px 6px 25px 0px rgba($black, .2);
-			}
-			.blur-project{
-				background: white;
-				position: absolute;
-				filter: blur(10px);
-				height: 100%;
-				width: 100%;
-				top: 0%;
-				left: 0%;
-				right: 20%;
-				bottom: 20%;
-			}
-			.text-project {
-				position: relative;	
-				padding: 4em 1em 3em 5em;
-
-				a{
-					margin-left: 65%;
-					text-decoration: none;
-					font: {
-						size: 1.2em;
-						weight: 200;
-					}
-					&:hover {
-						text-decoration: line-through;
-						color: $greenOp;
-					}
-				}
-			}
-			#interview {
-				@include w-h(50%, auto);
-				margin-top: -14%;
-				margin-right: 9%;
-				z-index: 5;
-			}
 			#restaurant {
-				@include w-h(50%, auto);
-				margin-top: -14%;
-				margin-right: 9%;
-				margin-bottom: 7%;
+				margin-right: -50%;
+				margin-top: -11%;
+				z-index: 3;
+			}
+			#allezcine {
+				margin-top: -10%;
+				margin-right: -12%;
 				z-index: 4;
+			}
+			#fanpage {
+				margin-top: -10%;
+				margin-right: -44%;
+				margin-bottom: 10%;
+				z-index: 5;
 			}
 		}
 		
@@ -423,11 +387,13 @@ a {
 /*-------------------- FOOTER --------------------*/
 
 footer {
+	height: 100%;
 	position: relative;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	margin-bottom: 5%;
+
 	.blur-footer {
 		background: #1D1D16;
 		position: absolute;
@@ -506,6 +472,22 @@ footer {
 }
 
 /*-------------------- MEDIA QUERIES --------------------*/
+@media only screen and (max-width: 1500px) and (max-width: 1950px){
+	body {font-size: 1.2em;}
+	.container {
+		header {
+			.name {
+				.webdev {
+					font-size: 13.7em;				
+				}
+			}	
+		}
+		#header-line-right {
+			margin-top: 7%;
+    		margin-left: 20%;
+		}
+	}
+} 
 @media only screen and (max-width: 1500px){
 	.container {
 		header {
@@ -593,6 +575,10 @@ footer {
 				}
 			}	
 		}
+		#header-line-right {
+			margin-top: -11%;
+			margin-left: 3%;
+		}
 	}
 }
 @media only screen and (max-width: 1200px){
@@ -611,6 +597,10 @@ footer {
 				}
 			}	
 		}
+		#header-line-right {
+			margin-top: -7%;
+			margin-left: 3%;
+		}
 	}
 }
 @media only screen and (max-width: 1150px){
@@ -628,6 +618,14 @@ footer {
 					font-size: 11em;				
 				}
 			}	
+		}
+		#header-line-right {
+			margin-top: -9%;
+			margin-left: 2%;
+		}
+
+		#about-line {
+			margin-top: -17%;
 		}
 	}
 }
@@ -664,6 +662,23 @@ footer {
 					font-size: 11.5em;				
 				}
 			}	
+		}
+		#header-line-right {
+			margin-top: -15%;
+			margin-left: 4%;
+		}
+
+		#about-line {
+			margin-top: -24%;
+		}
+
+		#work-line {
+			margin-left: 7%;
+			margin-top: 19%;
+		}
+
+		#contact-line {
+			margin-top: 10%;
 		}
 	}	
 }
