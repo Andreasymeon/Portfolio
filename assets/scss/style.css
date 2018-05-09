@@ -41,7 +41,7 @@ a {
   font-size: 1.2em; }
   a:hover {
     color: #456657;
-    opacity: .5; }
+    cursor: pointer; }
 
 /*-------------------- MENU NAV --------------------*/
 .nav-container {
