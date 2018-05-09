@@ -61,24 +61,3 @@ $(function() {
     //.addIndicators() 
     .addTo(controller);
 });
-
-/*function pathPrepare ($el) {
-              var lineLength = $el[0].getTotalLength();
-              $el.css("stroke-dasharray", lineLength);
-              $el.css("stroke-dashoffset", lineLength);
-            }
-
-            var $line = $("path#line");
-
-            // prepare SVG
-            pathPrepare($line);
-
-            // build tween
-            var tween = new TimelineMax()
-              .add(TweenMax.to($line, 0.9, {strokeDashoffset: 0, ease:Linear.easeNone})) // draw word for 0.9
-
-            // build scene
-            var scene = new ScrollMagic.Scene({triggerElement: ".name", duration: 200, tweenChanges: true})
-                    .setTween(tween)
-                    .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller);*/
