@@ -7,24 +7,38 @@
 	<meta name="keywords" content="web development" />
 
 	<title>Andrea Symeon - Portfolio</title>
-	<link rel="stylesheet" href="./assets/css/normalize.css">
+	
+	<!-- STYLESHEET -->
 	<link rel="stylesheet" href="./assets/scss/style.css">
+	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<!-- JQUERY -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- TWEENMAX + SCROLLMAGIC-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+	<!-- GSAP PLUGING-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
+
 </head>
 <body>
 	<!-- MENU -->
 	<div class="nav-container">
 		<nav>
-			<div id="logo"><a href="index.html">A</a></div>
+			<div id="logo"><a>A</a></div>
 			<ul class="navbar">
 				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
+					<a id="btnAbout" class="nav-link">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#work">Work</a>
+					<a id="btnWork" class="nav-link">Work</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a id="btnContact" class="nav-link">Contact</a>
 				</li>
 			</ul>	
 		</nav>
@@ -33,11 +47,11 @@
 
 	<div class="container">
 		<svg id="header-line-right" >
-		  <line x1="1600" y1="50" x2="750" y2="450" />	
+		  <line id="line" x1="1600" y1="50" x2="750" y2="450" />	
 		  Sorry, your browser does not support inline SVG.
 		</svg>
 		<!-- HEADER -->
-		<header>
+		<header >
 			<div class="name">
 			<div class="blur-name"></div>
 				<h1 class="andrea">Andrea</h1>
@@ -50,15 +64,14 @@
 		<main>
 			<!-- ABOUT -->
 			<section id="about">
-				<svg id="about-line" >
+				<svg id="about-line">
 				  <line x1="0" y1="400" x2="1000" y2="300"/>
 				  Sorry, your browser does not support inline SVG.
 				</svg>
 				<h2>About</h2>
 				<span class="line"></span>
-				<p>A hard working and passionate  Web Developer, with a strong sense of initiative and autonomy. Having started developing 6 months ago, I have gained a practical understanding of the main  languages used to create websites, confidence in resolving problems and tricks to make google answer to any of my questions.<br/> Keen to work in a creative environment</p>
+				<p>A hard working and self-thaugth Web Developer, with a strong sense of initiative and autonomy. Having started developing 6 months ago, I have gained a practical understanding of the main technologies used to create websites, confidence in resolving problems and tricks to make google answer any of my questions.<br/> I am passionate and keen to work in a creative environment.</p>
 			</section>
-
 			<!-- /ABOUT -->
 
 			<!-- WORK -->
@@ -69,9 +82,10 @@
 				</svg>
 				<div id="work-intro">
 					<h2>Work</h2>
-					<span class="line"></span>
+					<span id="trigger" class="line"></span>
 					<p>During the 6 months course at BeCode, we have been given various projects to put our learning in to practice. Here are the project I'm most proud of.</p>
 				</div>
+
 				<div id="interview" class="click img-project">
 					<a href="https://andreasymeon.github.io/interview-webdev/" target="_blank"><img src="assets/img/interview.png" alt="image of my interview project"></a>
 				</div>
@@ -93,7 +107,7 @@
 			<!-- CONTACT -->
 			<section id="contact">
 			<svg id="contact-line" >
-			  <line x1="0" y1="200" x2="1000" y2="0"/>
+			  <line x1="0" y1="200" x2="600" y2="0"/>
 			  Sorry, your browser does not support inline SVG.
 			</svg>
 				<h2>Contact</h2>
@@ -102,8 +116,9 @@
 			</section>
 		</main>
 	</div>
-
 	<!-- /CONTACT -->
+	
+	<!-- /FOOTER -->
 	<footer>
 		<div class="blur-footer"></div>
 
@@ -121,6 +136,8 @@
 			</ul>
 		</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<!-- /FOOTER -->
+
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
