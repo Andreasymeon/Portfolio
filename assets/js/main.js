@@ -31,7 +31,7 @@ $(function() {
         duration: 500
     })
     .setClassToggle("#header-line-right","drawing")
-    //.addIndicators() 
+    .addIndicators() 
     .addTo(controller);
 });
 $(function() {
@@ -40,7 +40,7 @@ $(function() {
         duration: 300
     })
     .setClassToggle("#about-line","drawing")
-    //.addIndicators() 
+    .addIndicators() 
     .addTo(controller);
 });
 $(function() {
@@ -49,7 +49,7 @@ $(function() {
         duration: 300
     })
     .setClassToggle("#work-line","drawing")
-    //.addIndicators() 
+    .addIndicators() 
     .addTo(controller);
 });
 $(function() {
@@ -58,6 +58,7 @@ $(function() {
         duration: 700
     })
     .setClassToggle("#contact-line","drawing")
-    //.addIndicators() 
+    .addIndicators() 
     .addTo(controller);
 });
+

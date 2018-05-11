@@ -13,24 +13,16 @@
 	<link rel="stylesheet" href="./assets/css/normalize.css">
 	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-	<!-- JQUERY -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>	
-	<!-- GSAP + PLUGING-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-	<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
-	<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
-	<!-- SCROLLMAGIC-->
-	<script  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-	<script  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-	<script  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="./assets/img/A-favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./assets/img/A-favicon-16x16.png" sizes="16x16" />	
 </head>
 <body>
 	<!-- MENU -->
 	<div class="nav-container">
 		<nav>
-			<div id="logo"><a>A</a></div>
-			<ul class="navbar">
+			<div id="logo"><a class="animated delay3 fadeIn">A</a></div>
+			<ul class="navbar animated delay3 fadeInUp">
 				<li class="nav-item">
 					<a id="btnAbout" class="nav-link">About</a>
 				</li>
@@ -46,16 +38,16 @@
 	<!-- /MENU -->
 
 	<div class="container">
-		<svg id="header-line-right" >
+		<svg id="header-line-right" class="delay3">
 		  <line id="line" x1="1600" y1="50" x2="750" y2="450" />	
 		</svg>
 		<!-- HEADER -->
 		<header >
 			<div class="name">
 			<div class="blur-name"></div>
-				<h1 class="andrea">Andrea</h1>
-				<h1 class="symeon">Symeon</h1>
-				<h1 class="webdev">Web Developer</h1>
+				<h1 class="andrea animated fadeIn">Andrea</h1>
+				<h1 class="symeon animated delay1 fadeIn">Symeon</h1>
+				<h1 class="webdev animated delay2 fadeInOp">Web Developer</h1>
 			</div>
 		</header>
 		<!-- /HEADER -->
@@ -66,37 +58,37 @@
 				<svg id="about-line">
 				  <line x1="0" y1="400" x2="1000" y2="300"/>
 				</svg>
-				<h2>About</h2>
-				<span class="line"></span>
-				<p>A hard working and self-thaugth Web Developer, with a strong sense of initiative and autonomy. Having started developing 6 months ago, I have gained a practical understanding of the main technologies used to create websites, confidence in resolving problems and tricks to make google answer any of my questions. I am passionate and keen to work in a creative environment.</p>
+				<h2 classe="title">About</h2>
+				<span id="line" class="line fadeIn"></span>
+				<p id="text" class="animated fadeInUp">A hard working and self-thaugth Web Developer, with a strong sense of initiative and autonomy. Having started developing 6 months ago, I have gained a practical understanding of the main technologies used to create websites, confidence in resolving problems and tricks to make google answer any of my questions. I am passionate and keen to work in a creative environment.</p>
 			</section>
 			<!-- /ABOUT -->
 
 			<!-- WORK -->
 			<section id="work">
-				<svg id="work-line" >
+				<svg id="work-line">
 				  <line x1="300" y1="0" x2="1400" y2="450" />
 				</svg>
 				<div id="work-intro">
-					<h2>Work</h2>
-					<span id="trigger" class="line"></span>
-					<p>During the 6 months course at BeCode, we have been given various projects to put our learning in to practice. Here are the project I'm most proud of.</p>
+					<h2 class="animated fadeIn">Work</h2>
+					<span id="trigger" class="line animated fadeIn"></span>
+					<p class="animated fadeInUp">During the 6 months course at BeCode, we have been given various projects to put our learning in to practice. Here are the project I'm most proud of.</p>
 				</div>
 
-				<div id="interview" class="click img-project">
+				<div id="interview" class="click img-project animated fadeInUp">
 					<a href="https://andreasymeon.github.io/interview-webdev/" target="_blank"><img src="assets/img/interview.png" alt="image of my interview project"></a>
 				</div>
 				
-				<div id="restaurant" class="img-project">
+				<div id="restaurant" class="img-project animated delay1 fadeInUp">
 					<a href="https://andreasymeon.github.io/restaurant-css-framework" target="_blank"><img src="assets/img/Wild-Feast.jpg" alt="image of my restaurant project"></a>
 				</div>
 				
-				<div id="allezcine" class="click img-project">
-					<a href="https://github.com/Andreasymeon/frontend-AllezCine" target="_blank"><img src="assets/img/AllezCine.png" alt="image of allez ciné project"></a>
+				<div id="allezcine" class="click img-project animated delay2 fadeInUp">
+					<a href="https://andreasymeon.github.io/allezcine/" target="_blank"><img src="assets/img/AllezCine.png" alt="image of allez ciné project"></a>
 				</div>
 
-				<div id="fanpage" class="click img-project">
-					<a href="https://andreasymeon.github.io/interview-webdev/" target="_blank"><img src="assets/img/TheWorldOfTintin.png" alt="image of my fanpage project"></a>
+				<div id="fanpage" class="click img-project animated delay3 fadeInUp">
+					<a href="https://andreasymeon.github.io/fanpage/" target="_blank"><img src="assets/img/TheWorldOfTintin.png" alt="image of my fanpage project"></a>
 				</div>
 			</section>
 			<!-- /WORK -->
@@ -106,9 +98,9 @@
 			<svg id="contact-line" >
 			  <line x1="0" y1="200" x2="600" y2="0"/>
 			</svg>
-				<h2>Contact</h2>
-				<span class="line"></span>
-				<p>I'm always interested in speaking with creative folk, so please feel free to <a href="#socials">get in touch</a></p>
+				<h2 class="animated fadeIn">Contact</h2>
+				<span class="line animated fadeIn"></span>
+				<p class="animated fadeInUp">I'm always interested in speaking with creative folk, so please feel free to <a href="#socials">get in touch</a></p>
 			</section>
 		</main>
 	</div>
@@ -119,21 +111,32 @@
 		<div class="blur-footer"></div>
 
 		<div class="footer-text">
-			<h2 id="folks">Thats all folks!</h2>
-			<span class="line-folks"></span>
-			<p>Thanks for taking a look at my portfolio. If you’d like to chat about a potential collaboration, please send a mail to -</p>
-			<a href="mailto:andreasymeon@me.com">andreasymeon@me.com</a> 
+			<h2 id="folks" class="animated fadeIn">Thats all folks!</h2>
+			<span class="line-folks animated fadeIn"></span>
+			<p class="animated fadeInUp">Thanks for taking a look at my portfolio. If you’d like to chat about a potential collaboration, please send a mail to -</p>
+			<a href="mailto:andreasymeon@me.com" class="animated delay1 fadeIn">andreasymeon@me.com</a> 
 		</div>
 			
 		<div id="socials" class="social-links">
 			<ul>
-				<li><a href="https://www.linkedin.com/in/andrea-symeon/" target="_blank">Linkedin</a></li>
-				<li><a href="https://github.com/Andreasymeon" target="_blank">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/andrea-symeon/" class="animated delay1 fadeIn" target="_blank">Linkedin</a></li>
+				<li><a href="https://github.com/Andreasymeon" class="animated delay1 fadeIn" target="_blank">Github</a></li>
 			</ul>
 		</div>
 	</footer>
 	<!-- /FOOTER -->
+	
+	<!-- JQUERY -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>	
+	<!-- GSAP + PLUGING-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
+	<!-- SCROLLMAGIC-->
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
 
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/main.min.js"></script>
 </body>
 </html>
