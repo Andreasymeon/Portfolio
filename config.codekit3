@@ -9,11 +9,81 @@
 	],
 "creatorBuild": "26680",
 "files": {
-	"\/.gitattributes": {
+	"\/assets\/css\/fonts\/Avenir_Next\/AvenirNext_Bold.otf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/portfolio\/.gitattributes",
+		"oAP": "\/assets\/css\/fonts\/Avenir_Next\/AvenirNext_Bold.otf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Avenir_Next\/AvenirNext_It.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Avenir_Next\/AvenirNext_It.otf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Avenir_Next\/AvenirNext_Regular.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Avenir_Next\/AvenirNext_Regular.otf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Bangla\/Bangla_MN.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Bangla\/Bangla_MN.ttf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Lovelo\/Lovelo_Line_Bold.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Lovelo\/Lovelo_Line_Bold.otf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Lovelo\/lovelo_line_bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Lovelo\/lovelo_line_bold.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Lovelo\/Lovelo_Line_Light.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Lovelo\/Lovelo_Line_Light.otf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Lovelo\/lovelo_line_light.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Lovelo\/lovelo_line_light.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Lovelo\/readme.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Lovelo\/readme.txt",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Palatino\/palatino.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Palatino\/palatino.ttf",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Sadhu\/Sadhu.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/fonts\/Sadhu\/Sadhu.ttf",
 		"oF": 0
 		},
 	"\/assets\/css\/normalize.css": {
@@ -26,13 +96,13 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/css\/style.css": {
+	"\/assets\/css\/normalize.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/style-min.css",
+		"oAP": "\/assets\/css\/normalize.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -41,6 +111,116 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/assets\/img\/.gitignore",
+		"oF": 0
+		},
+	"\/assets\/img\/A-favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 514,
+		"oA": 0,
+		"oAP": "\/assets\/img\/A-favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/A-favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1215,
+		"oA": 0,
+		"oAP": "\/assets\/img\/A-favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/A-favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/img\/A-favicon.ico",
+		"oF": 0
+		},
+	"\/assets\/img\/AllezCine.png": {
+		"ft": 32768,
+		"iS": 100550,
+		"oA": 0,
+		"oAP": "\/assets\/img\/AllezCine.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/interview.png": {
+		"ft": 32768,
+		"iS": 6988,
+		"oA": 0,
+		"oAP": "\/assets\/img\/interview.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/TheWorldOfTintin.png": {
+		"ft": 32768,
+		"iS": 43056,
+		"oA": 0,
+		"oAP": "\/assets\/img\/TheWorldOfTintin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/Wild-Feast.jpg": {
+		"ft": 16384,
+		"iS": 138609,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/img\/Wild-Feast.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/js\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/main.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/main.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/scss\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/scss\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/scss\/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/scss\/style.css.map",
 		"oF": 0
 		},
 	"\/assets\/scss\/style.scss": {
@@ -88,7 +268,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 546010172,
-	"displayValue": "portfolio",
+	"displayValue": "portfolio 1",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-maroney",
 	"iconImageWasSetByUser": 0
