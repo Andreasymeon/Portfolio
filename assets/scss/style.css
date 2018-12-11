@@ -192,7 +192,8 @@ a {
     stroke: #DB5E55;
     stroke-width: 2.5;
     z-index: 1;
-    position: absolute; }
+    position: absolute;
+    margin-top: 5%; }
   .container #contact-line {
     width: 65%;
     height: auto;
@@ -659,7 +660,7 @@ footer {
 
 @media only screen and (max-width: 375px) {
   .container header .name .webdev {
-    font-size: 10.3em; }
+    font-size: 7.6em; }
   .container main #work #work-intro h2 {
     margin-top: 50%;
     margin-left: -74%; }
