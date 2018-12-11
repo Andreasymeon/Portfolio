@@ -332,7 +332,6 @@ a {
       .container main #work #interview {
         z-index: 2; }
       .container main #work #restaurant {
-        padding-left: 30%;
         margin-top: -10%;
         z-index: 3; }
       .container main #work #allezcine {
@@ -341,7 +340,6 @@ a {
         z-index: 4; }
       .container main #work #fanpage {
         margin-top: -10%;
-        padding-left: 30%;
         margin-bottom: 10%;
         z-index: 5; }
     .container main #contact {
@@ -527,9 +525,6 @@ footer {
       font-size: 11em; }
   .container #about-line {
     margin-top: -24%; }
-  .container #work-line {
-    margin-left: 7%;
-    margin-top: 19%; }
   .container #contact-line {
     margin-top: 10%; } }
 
