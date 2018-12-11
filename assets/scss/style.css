@@ -192,8 +192,7 @@ a {
     stroke: #DB5E55;
     stroke-width: 2.5;
     z-index: 1;
-    position: absolute;
-    margin-top: 5%; }
+    position: absolute; }
   .container #contact-line {
     width: 65%;
     height: auto;
