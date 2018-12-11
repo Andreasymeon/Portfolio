@@ -86,6 +86,16 @@
 		"oAP": "\/assets\/css\/fonts\/Sadhu\/Sadhu.ttf",
 		"oF": 0
 		},
+	"\/assets\/css\/normalize-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/normalize-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/normalize.css": {
 		"aP": 1,
 		"bl": 0,
@@ -93,16 +103,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/css\/normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/css\/normalize.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/normalize.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -119,8 +119,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/A-favicon-16x16.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -130,8 +130,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/A-favicon-32x32.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -148,8 +148,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/AllezCine.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -159,8 +159,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/interview.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -170,8 +170,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/TheWorldOfTintin.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -183,8 +183,18 @@
 		"oAP": "\/assets\/img\/Wild-Feast.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"\/assets\/js\/main-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/js\/main.js": {
 		"ft": 64,
@@ -192,6 +202,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/main.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/main.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -268,10 +288,11 @@
 	},
 "projectAttributes": {
 	"creationDate": 546010172,
-	"displayValue": "portfolio 1",
+	"displayValue": "portfolio",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-maroney",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 565197803
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -4,15 +4,19 @@
 @font-face {
   font-family: Lovelo-bold;
   src: url(../css/fonts/Lovelo/Lovelo_Line_Bold.otf); }
+
 @font-face {
   font-family: Lovelo-light;
   src: url(../css/fonts/Lovelo/Lovelo_Line_Light.otf); }
+
 @font-face {
   font-family: Bangla;
   src: url(../css/fonts/Bangla/Bangla_MN.ttf); }
+
 @font-face {
   font-family: Avenir;
   src: url(../css/fonts/Avenir_Next/AvenirNext_Regular.otf), url(../css/fonts/Avenir_Next/AvenirNext_Bold.otf); }
+
 /*-------------------- CSS ANIMATIONS --------------------*/
 .animated {
   -webkit-animation-duration: 1s;
@@ -44,6 +48,7 @@
     opacity: 0.5; }
   to {
     opacity: 1; } }
+
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 3s; }
@@ -55,6 +60,7 @@
     opacity: 0; }
   to {
     opacity: 0.5; } }
+
 .fadeInOp {
   animation-name: fadeInOp;
   animation-duration: 5s; }
@@ -67,6 +73,7 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
+
 .fadeInUp {
   animation-name: fadeInUp; }
 
@@ -76,6 +83,7 @@
     visibility: hidden; }
   to {
     stroke-dashoffset: 0; } }
+
 .drawing {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
@@ -84,13 +92,13 @@
 
 /*-------------------- GLOBAL VARIABLES --------------------*/
 html, body {
-  width: 99vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: white; }
 
 body {
+  /*overflow-x:hidden;*/
   overflow-y: scroll; }
 
 li {
@@ -116,11 +124,14 @@ a {
   width: 85%;
   height: 20%;
   margin: auto;
-  padding: auto; }
+  padding: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .nav-container #logo {
     height: 1em;
     margin: auto;
-    /*position: fixed;*/
+    position: fixed;
     color: #DB5E55;
     z-index: 50; }
     .nav-container #logo a {
@@ -153,6 +164,9 @@ a {
   height: 100%;
   margin: auto;
   padding: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   /*-------------------- LINES --------------------*/
   /*-------------------- HEADER --------------------*/
   /*-------------------- MAIN --------------------*/ }
@@ -163,8 +177,6 @@ a {
     stroke-width: 2.5;
     z-index: 3;
     position: absolute;
-    margin-top: -2%;
-    margin-left: 5%;
     animation-delay: 2s; }
   .container #about-line {
     width: 35%;
@@ -181,8 +193,7 @@ a {
     stroke-width: 2.5;
     z-index: 1;
     position: absolute;
-    margin-left: 15%;
-    margin-top: 15%; }
+    margin-top: 5%; }
   .container #contact-line {
     width: 65%;
     height: auto;
@@ -195,6 +206,18 @@ a {
   .container header {
     box-shadow: 2px 2px 300px 200px rgba(56, 56, 56, 0.1);
     position: relative; }
+    .container header .blur-name {
+      filter: blur(100px);
+      position: absolute;
+      background-color: #383838;
+      background-attachment: fixed;
+      opacity: 0.1;
+      height: 100%;
+      top: 0px;
+      left: 0em;
+      right: 0px;
+      bottom: 0px;
+      z-index: -100; }
     .container header .name {
       width: 100%;
       height: 50%;
@@ -227,7 +250,7 @@ a {
         opacity: .5;
         white-space: nowrap;
         line-height: 59%;
-        font-size: 13.1em; }
+        font-size: 12.7em; }
   .container main {
     height: 100%;
     margin-top: 18em;
@@ -243,7 +266,7 @@ a {
       color: #383838;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
       font-family: "Bangla";
-      font-size: 13em;
+      font-size: 10em;
       font-weight: normal; }
     .container main h3 {
       color: #383838;
@@ -280,6 +303,7 @@ a {
       width: auto;
       height: auto;
       margin-top: -15%;
+      margin-right: 4%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -296,28 +320,28 @@ a {
           height: auto;
           margin-left: 2em; }
       .container main #work .img-project {
+        width: 80vw;
         height: auto; }
         .container main #work .img-project img {
-          width: 100%;
+          width: 50%;
           max-width: 45em;
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5); }
           .container main #work .img-project img:hover {
             outline: 5px solid #456657;
             opacity: 1; }
       .container main #work #interview {
-        margin: auto;
         z-index: 2; }
       .container main #work #restaurant {
-        margin: auto;
-        margin-top: -11%;
+        padding-left: 30%;
+        margin-top: -10%;
         z-index: 3; }
       .container main #work #allezcine {
-        margin: auto;
         margin-top: -10%;
+        margin-right: 0%;
         z-index: 4; }
       .container main #work #fanpage {
-        margin: auto;
         margin-top: -10%;
+        padding-left: 30%;
         margin-bottom: 10%;
         z-index: 5; }
     .container main #contact {
@@ -351,7 +375,7 @@ footer {
   align-items: flex-end;
   padding-bottom: 5%;
   /*-------------------- SOCIALS --------------------*/ }
-   footer .footer-text {
+  footer .footer-text {
     width: 60%;
     height: auto;
     position: relative;
@@ -404,104 +428,103 @@ footer {
             color: #456657; }
 
 /*-------------------- MEDIA QUERIES --------------------*/
-@media only screen and (max-width: 1500px) and (max-width: 1950px) {
-  body {
-    font-size: 1.2em; }
-
+@media only screen and (max-width: 1950px) {
+  ody {
+    font-size: 1em; }
+  .container header .name h1 {
+    font-size: 15em; }
   .container header .name .webdev {
-    font-size: 13.7em; }
-  .container #header-line-right {
-    margin-top: 7%;
-    margin-left: 20%; } }
+    font-size: 15em; } }
+
+@media only screen and (max-width: 1700px) {
+  .container header .name .webdev {
+    font-size: 14em; } }
+
+@media only screen and (max-width: 1600px) {
+  .container header .name .webdev {
+    font-size: 13em; } }
+
 @media only screen and (max-width: 1500px) {
   .container header .name h1 {
     font-size: 11em; }
   .container header .name .webdev {
-    font-size: 12.9em; } }
+    font-size: 12.5em; } }
+
 @media only screen and (max-width: 1450px) {
   .container header .name h1 {
     font-size: 11em; }
   .container header .name .webdev {
-    font-size: 12.5em; } }
+    font-size: 11.95em; } }
+
 @media only screen and (max-width: 1400px) {
   .container header .name h1 {
     font-size: 11em; }
   .container header .name .webdev {
-    font-size: 12.1em; } }
+    font-size: 11.5em; } }
+
 @media only screen and (max-width: 1350px) {
   .container header .name h1 {
     font-size: 11em; }
   .container header .name .webdev {
-    font-size: 11.7em; } }
+    font-size: 11em; } }
+
 @media only screen and (max-width: 1300px) {
   .container header .name h1 {
     font-size: 11em; }
   .container header .name .webdev {
-    font-size: 11.3em; } }
+    font-size: 11em; } }
+
 @media only screen and (max-width: 1250px) {
   html, body {
     font-size: .975em; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
       font-size: 11em; }
     .container header .name .webdev {
-      font-size: 11.3em; }
-  .container #header-line-right {
-    margin-top: -11%;
-    margin-left: 3%; } }
+      font-size: 10.7em; } }
+
 @media only screen and (max-width: 1200px) {
   html, body {
     font-size: .975em; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
       font-size: 11em; }
     .container header .name .webdev {
-      font-size: 11em; }
-  .container #header-line-right {
-    margin-top: -7%;
-    margin-left: 3%; } }
+      font-size: 10.7em; } }
+
 @media only screen and (max-width: 1150px) {
   html, body {
     font-size: .95em; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
       font-size: 11em; }
     .container header .name .webdev {
       font-size: 11em; }
-  .container #header-line-right {
-    margin-top: -9%;
-    margin-left: 2%; }
   .container #about-line {
     margin-top: -17%; } }
+
 @media only screen and (max-width: 1100px) {
   html, body {
     font-size: .95em; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
       font-size: 11em; }
     .container header .name .webdev {
-      font-size: 10.5em; } }
+      font-size: 10.2em; } }
+
 @media only screen and (max-width: 1050px) {
   html, body {
-    font-size: 0.9em; }
-
+    font-size: .895em; }
   .container header {
     max-width: 90%; }
     .container header .name h1 {
       font-size: 11em; }
     .container header .name .webdev {
-      font-size: 11.5em; }
-  .container #header-line-right {
-    margin-top: -15%;
-    margin-left: 4%; }
+      font-size: 11em; }
   .container #about-line {
     margin-top: -24%; }
   .container #work-line {
@@ -509,84 +532,92 @@ footer {
     margin-top: 19%; }
   .container #contact-line {
     margin-top: 10%; } }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1000px) {
   html, body {
-    font-size: .8em; }
-
+    font-size: .9em;
+    line-height: 1.5; }
+  body {
+    /*overflow-x: hidden;*/ }
   #header-line-right {
     display: none; }
-
   #about-line {
     display: none; }
-
   #work-line {
     display: none; }
-
   #contact-line {
     display: none; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
-      font-size: 11em; }
+      font-size: 10em; }
     .container header .name .webdev {
-      font-size: 13.8em; }
+      font-size: 9.1em; }
+  .container main h2 {
+    font-size: 8em; }
   .container main #contact p {
     margin-right: 7%; } }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   html, body {
-    font-size: .7em; }
-
+    font-size: .8em; }
+  body {
+    /*overflow-x: hidden;*/ }
   #header-line-right {
     display: none; }
-
   #about-line {
     display: none; }
-
   #work-line {
     display: none; }
-
   #contact-line {
     display: none; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
       font-size: 11em; }
     .container header .name .webdev {
-      font-size: 14.1em; }
+      font-size: 10em; }
   .container main #contact p {
     margin-right: 7%; } }
+
+@media only screen and (max-width: 700px) {
+  .container header .name h1 {
+    font-size: 10em; }
+  .container header .name .webdev {
+    font-size: 9.3em; } }
+
+@media only screen and (max-width: 650px) {
+  .container header .name h1 {
+    font-size: 10em; }
+  .container header .name .webdev {
+    font-size: 8.7em; } }
+
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
   html, body {
-    font-size: .6em; }
-
+    font-size: .7em; }
+  body {
+    /*overflow-x: hidden;*/ }
   p {
     font-size: 1.5em; }
-
   #header-line-right {
     display: none; }
-
   #about-line {
     display: none; }
-
   #work-line {
     display: none; }
-
   #contact-line {
     display: none; }
-
   .container header {
     max-width: 90%; }
     .container header .name h1 {
-      font-size: 15em; }
+      font-size: 9.5em; }
     .container header .name .webdev {
-      font-size: 15.5em; }
+      font-size: 10em; }
   .container main h2 {
-    font-size: 11em; }
+    font-size: 7.5em; }
   .container main #about .line {
     margin-left: 6.5em; }
   .container main #about p {
@@ -603,16 +634,35 @@ footer {
     margin-right: 14%; }
   .container main #contact p {
     margin-right: 7%; }
-
   footer .footer-text {
     margin-left: 5em; }
     footer .footer-text h2 {
       font-size: 4.3em; } }
-@media only screen and (max-width: 425px) {
-  .container header .name h1 {
-    font-size: 11em; }
+
+@media only screen and (max-width: 550px) {
   .container header .name .webdev {
-    font-size: 11em; } }
+    font-size: 10em; } }
+
+@media only screen and (max-width: 500px) {
+  .container header .name .webdev {
+    font-size: 9em; }
+  .container main h2 {
+    font-size: 6.5em; } }
+
+@media only screen and (max-width: 450px) {
+  .container header .name h1 {
+    font-size: 9em; }
+  .container header .name .webdev {
+    font-size: 8.5em; }
+  .container main h2 {
+    font-size: 6em; } }
+
+@media only screen and (max-width: 400px) {
+  .container header .name .webdev {
+    font-size: 7.7em; }
+  .container main h2 {
+    font-size: 6em; } }
+
 @media only screen and (max-width: 375px) {
   .container header .name .webdev {
     font-size: 10.3em; }
@@ -621,6 +671,7 @@ footer {
     margin-left: -74%; }
   .container main #contact h2 {
     margin-right: 19%; } }
+
 @media only screen and (max-width: 320px) {
   .container header .name .webdev {
     font-size: 9.1em; }
@@ -629,5 +680,3 @@ footer {
     margin-left: -106%; }
   .container main #contact h2 {
     margin-right: 34%; } }
-
-/*# sourceMappingURL=style.css.map */
